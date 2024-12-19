@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LEVEL 1</title>
+
+    <link rel="stylesheet" href="style.css">
+<!--CSS Through style tag -->    
+    <style>
+        h4{
+            color: red;
+        }
+        h2{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            Priotities of CSS<br>
+            1.Inline<br>
+            2.Style tag<br>
+            3.External stylesheet<br>
+        </p>  
+    </header><hr>
+    <main>
+        hello
+        <section>
+<!-- Inline style-->
+           <h1 style="color: rgb(26, 8, 215);"> Hello from RM Group of industry!</h1>
+           <h5 style="color: green;"> Hello from RM Group of industry in green!</h5>
+        </section>
+        <section>
+<!-- Style tag-->
+            <h4> Hello this is css through style tag!</h1>
+            <h2> Game is Now Started</h2>
+        </section>
+        <section>
+<!-- External Stylesheet-->
+<!-- Writing CSS in a separate document & linking it with HTML file-->
+            <h3> Hello this is css through external stylesheet!</h3>
+        </section>
+        <section>
+<!-- Color Property -->
+<!-- Used to set the color of foreground -->
+<!-- color: red; -->
+         <b><p>
+                this is simple & normal paragraph. 
+            </p>
+         </b>  
+         <button>Press Me</button> 
+        </section>
+        <section>
+<!-- Background Color Property-->
+<!-- Used to set the color of background-->
+<!-- Background: color;-->
+            <p></p>
+<!-- color System-->
+<!-- 1.RGB -->
+<!--   color: rgb(255,0,0); = red--> 
+<!--   color: rgb(0,255,0); = green-->
+<!--   color: rgb(0,0,255); = blue-->
+<!-- 2.Hexadecimal -->
+<!--    color: #ff0000; = red-->
+<!--    color: #00ff00; = green-->
+<!--    color: #0000ff; = blue-->
+        </section>
+        <section>
+<!-- Selector -->
+<!-- 1. Universal Selector-->
+<!--   ( * )= asterisk -->
+<!--    *{
+     write css property here
+} -->
+               
+<!-- 2.Class Selector-->
+<!--   ( .myclass ) -->
+<!--    .myclass{
+     write css property here
+} -->    
+             <h1 class="myclass"> This is class selector</h1>
+             <p class="myclass">
+                this is paragraph wohh with css
+             </p>
+<!-- 3. Element Selector-->
+<!--   ( h1 ) -->
+<!--    element name{
+     write css property here
+} -->
+            <h1>This is Element selector</h1>
+            <h1>This is element selector</h1>
+            <h1>This is element selector</h1>
+<!-- 4. Id Selector-->
+<!--   ( #myid ) -->
+<!--    #myId{
+     write css property here
+} -->
+            <h1 id="one">This is Id selector</h1>
+            <h1 id="two">This is Id selector</h1>
+            <h1 id="three">This is Id selector</h1>
+        </section>
+        <section>
+<!-- Text Properties -->
+<!-- 1.Text-align
+   text-align: left/right/centre -->
+            <p id="hello">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus non quam, officia labore voluptatem enim optio! Reiciendis, laborum ab asperiores id in laudantium quia dolores! Fugit sed beatae illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptatum pariatur recusandae? Veniam corrupti incidunt recusandae consequuntur sunt totam excepturi at deserunt assumenda distinctio autem enim, rem expedita omnis aperiam.
+                Vel veritatis magnam, asperiores obcaecati cum veniam. Culpa iusto iste, rerum porro maxime exercitationem a non excepturi necessitatibus tempore dolor animi amet fugit eveniet consectetur tenetur doloremque. Eaque, quasi deserunt!
+                Nesciunt quos architecto porro ut repellat quo accusamus saepe dignissimos tempora iusto sunt expedita excepturi alias, magni eos voluptas ab sed ipsa nisi illum quia exercitationem. Eaque, sit. Saepe, inventore.
+                Animi dignissimos eveniet atque dicta! Repellendus quia veritatis, libero voluptas enim distinctio perspiciatis, modi, est cum esse rerum repudiandae alias quas laboriosam unde soluta optio quos voluptates eos eius blanditiis?
+                Nobis, officiis nihil? Corporis enim molestias ducimus. Ipsam necessitatibus excepturi quia rerum quidem vel iusto amet ratione alias commodi cum suscipit porro voluptatum blanditiis, voluptates illum corrupti modi nemo magnam.
+                Numquam error rem vero, beatae facilis deserunt earum omnis dignissimos vel soluta aperiam deleniti aliquid alias, quibusdam amet sit perspiciatis architecto consequatur est! Sit aliquam in doloremque eligendi iste facere!
+                Necessitatibus quod architecto consectetur consequuntur blanditiis dolores tempora quia possimus? Laborum non repellendus harum perspiciatis commodi voluptatibus ipsum quisquam vel. Est cumque a eligendi earum alias autem ad praesentium similique!
+                Illo quas rerum ipsa deleniti in aliquam, dolor obcaecati perferendis, necessitatibus accusamus ex pariatur sequi exercitationem eaque explicabo corrupti dolorum iusto recusandae aspernatur quidem consequatur perspiciatis? Debitis, corporis! Impedit, fugit.
+                Illum, consequuntur eligendi. Consequatur, ad iusto, rem illo inventore consectetur in voluptates minima voluptas vel blanditiis, sint maiores voluptatibus magni a alias excepturi quis itaque esse quidem. Atque, voluptate? Pariatur.
+                Perferendis, id! Tenetur adipisci molestias iusto sunt quos eos optio obcaecati dolorem nostrum cum unde ut repudiandae, mollitia voluptate totam? Voluptatibus corrupti beatae aliquid eius culpa dicta necessitatibus laboriosam similique.
+            </p>
+<!-- 2.Text-decoration
+    text-decoration: underline /overline /line-through -->
+            <h1>Heading</h1>
+            <a href="https://www.youtube.com/">Youtube</a>
+<!-- 3.Font-weight
+    font-weight: normal/bold/bolder/lighter
+    font-weight: 100-900 -->
+            <P>Lorem ipsum aperiam expedita ad magnam ipsam explicabo quasi consequatur perspiciatis exercitationem.</P>
+<!-- 4.Font-family
+    font-family: arial 
+    font-family: arial, roboto, sans-serif, cursive -->
+            <p id="onee">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit repellendus magnam ratione eligendi autem dolores animi nemo fuga odit facilis ea, consequatur ab ullam! Perferendis nesciunt ea facere non!
+            </p>
+            <p id="twoo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio debitis eius odit consequuntur ipsum sint eos ea, architecto commodi inventore, eaque deserunt facilis esse, veniam facere voluptas magnam cum?
+            </p>
+<!-- 5.line-height 
+    line-height: 2px
+    line-height: normal -->
+            <p id="typee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi inventore reiciendis laborum beatae asperiores doloremque magnam perferendis natus, possimus vero quo aperiam sit impedit, omnis facilis et blanditiis totam.</p>
+            <p id="tiree">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque repellat eaque tempora ab praesentium accusamus deserunt? Accusamus, molestiae a quidem non et saepe architecto nobis sint sapiente voluptas hic consequatur?</p>
+            <p id="toxx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti atque beatae eaque, excepturi nisi corrupti, inventore, ullam voluptate a itaque neque consequatur? Eaque, debitis. Praesentium explicabo error magni porro iste.</p>
+<!-- 6.text-transform
+    text-transform: uppercase/lowercase/capitalize/none -->
+            <p id="typee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi inventore reiciendis laborum beatae asperiores doloremque magnam perferendis natus, possimus vero quo aperiam sit impedit, omnis facilis et blanditiis totam.</p>
+            <p id="toxx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti atque beatae eaque, excepturi nisi corrupti, inventore, ullam voluptate a itaque neque consequatur? Eaque, debitis. Praesentium explicabo error magni porro iste.</p>
+        </section>
+        <section>
+<!-- Unit in css -->
+<!-- 1. Absolute
+ pixels(px)
+  96px = 1 inch 
+  font-size: 2px; -->
+            <p id="type">para 1</p>
+            <p id="tire">para 2</p>
+            <p id="tox">para 3</p>
+<!-- 2. Relative
+    %
+    em
+    rem -->
+
+<!-- (i) percentage %
+        It is often used to define a size as relative to an element's parent object 
+            width: 33%;
+            margin-left: 50%; -->
+            <div id="per">
+                <div id="par"></div>
+            </div> <br><br>
+<!-- (ii) em  
+        Font size of the parent, in the case of typographical like font-size, and
+        font size of the element itself, in the case of other properties like width-->
+            <div id="box11">
+                 <div id="box12">Box 12</div>
+            </div><br/>
+<!--  (iii) Rem (Root Em)
+        Font size of the root element-->
+       
+            <div id="box13">
+                <div id="box14">Box 14</div>
+            </div>
+        </section>
+        <section>
+<!-- Box Model
+1. Height, width & Border
+    height: 100px;
+    width: 100px;
+    border-width: 2px;
+    border-style: solid/dotted/dashed
+    border-color: black; 
+ Teeno ko ek saath likne kay liye
+     border: 2px, solid, black
+2. Padding
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+ For shorthand padding
+    padding: 5px;
+    padding: 1px 3px 5px 6px;
+      1px=top
+      3px=right
+      5px=bottom
+      6px=left 
+     clockwise  
+3.Margin
+    Margin-left: 50px;
+    Margin-right: 30px;
+    Margin-top: 90px;
+    Margin-bottom: 200px;
+For shorthand margin    
+   Margin: 5px;
+    margin: 1px 3px 5px 6px;
+      1px=top
+      3px=right
+      5px=bottom
+      6px=left 
+     clockwise   -->
+            <div id="Box">
+                <h1> Hello</h1>
+            </div><br>
+            <div id="zex">
+                Div2
+                hello bro
+            </div>
+        </section>
+        <section>
+<!-- Display Property
+   display: inline/block/ inline-block/ none
+   inline:- Takes only the space required by the element. (no margin/ padding)-->
+           <div id="inline">this is a div</div><br><br>
+           <span>Hello world</span>
+        </section>
+<!-- Visibilty
+  Visibilty:hidden;
+   
+  note: when visibility is set to none, space for the elment is reserved but for display set to none, no space is reserved or blocked for the element. -->
+<!-- Alpha Channel
+  opacity (0 to 1)
+  rgba
+  color: rbga(255,0,0,0.5); -->
+        <section>
+            <div id="R"></div>
+            <div id="G"></div>
+            <div id="B"></div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

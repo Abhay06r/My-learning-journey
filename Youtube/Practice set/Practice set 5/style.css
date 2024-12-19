@@ -1,0 +1,8 @@
+div{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 0px;
+    background-size: cover;
+    background-image: url(/Photos/Mouse-unsplash.jpg);
+}

@@ -1,0 +1,165 @@
+*{
+    color: red;
+}
+h3{
+    color: orange;
+}
+p{
+    color: purple;
+    size: 100px;
+}
+button{
+    color: purple;
+    background-color: rgb(199, 141, 141);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+#one{
+    color: blueviolet;
+}
+#two{
+    color: green;
+}
+#three{
+    color: violet;
+}
+.myclass{
+    color: cyan;
+}
+#hello{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+#onee{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#twoo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#type{
+    font-size: 25px;
+}
+#tire{
+    font-size: 100px;
+}
+#tox{
+    font-size: 75px;
+}
+#typee{
+    font-size: 25px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+#tiree{
+    font-size: 100px;
+    line-height: normal;
+}
+#toxx{
+    font-size: 75px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+#zex{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    border-width: 5px;
+    border-radius: 20px;
+    padding: 25px 7px 10px 15px;
+    Margin-left: 100px;
+    Margin-right: 200px;
+    Margin-top: 150px;
+    Margin-bottom: 200px
+}
+#Box{
+    background-color: rgb(58, 255, 14);
+    height: 150px;
+    width: 200px;
+    border: 5px dashed rgb(3, 94, 88);
+    border-radius: 10%;
+    padding: 10px 5px 20px 30px;
+    margin: 50px 20px 30px 40px;
+}
+#inline{
+    background-color: aqua;
+    display: inline;
+}
+span{
+    display: block;
+}
+#R{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+    background-color: rgba( 255,0,0,0.5);
+}
+#G{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    background-color: green;
+    display: inline-block;
+    visibility: hidden;
+}
+#B{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    background-color: blue;
+    display: inline-block;
+}
+#per{
+    width: 150px;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+
+}
+#par{
+    width:30%;
+    height: 75px;
+    background-color: red;
+    display: inline-block;
+}
+#box11{
+    height: 100px;
+    width: 200px;
+    background-color: palegreen;
+    font-size: 10px;
+}
+#box12{
+    height: 50px;
+    width: 30%;
+    background-color: yellow;
+    margin-left: 10%;
+    font-size: 2em;
+    width: 5em;
+}
+#box13{
+    height: 100px;
+    width: 200px;
+    background-color: palegreen;
+    font-size: 10px;
+}
+#box14{
+    height: 30vh;
+    width: 40vw;
+    background-color: yellow;
+    margin-left: 10%;
+    font-size: 2em;
+    width: 5rem;
+}

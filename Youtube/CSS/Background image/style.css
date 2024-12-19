@@ -1,0 +1,21 @@
+div{
+    height: 100px;
+    width: 200px;
+    background-color: coral;
+    border: 2px dashed black;
+    display: inline-block;
+}
+body{
+    background-size: cover;
+    background-image: url(/Photos/Leopard-unsplash.jpg);
+}
+
+#box1{
+    background-image: url(/Photos/Leopard-unsplash.jpg);
+    background-size: cover;
+}
+#box2{
+    background-image: url(/Photos/Mouse-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

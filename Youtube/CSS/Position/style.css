@@ -1,0 +1,45 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    display: inline-block;
+    border: 3px solid black;
+}
+/* statice- default position (the top,right,bottom,left,and z-index properties have no effect) */
+#box1{
+    position: static;
+}
+/* relative- element is relative to itself (the top,right,bottom,left,and z-index will work) */
+#box2{
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+/* absolute- positioned relative to its closest positioned ancestor (removed from flow) */
+#box3{
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+/* fixed- positioned relative to browser (remove from flow)*/
+#box4{
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 45px;
+}
+/* sticky- positioned based on user's  */
+#box5{
+    background-color: cadetblue;
+    position: sticky;
+    top: 0px;
+    left: 50px;
+    z-index: -1;
+}
+/* z-index
+ It decides the stack level of elements
+ Overlapping elements with a larger z-index cover those with smaller one.  */

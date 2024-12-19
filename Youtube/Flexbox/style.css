@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+}
+div {  
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#container {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    align-items: last baseline;
+    align-content: last baseline;
+}
+
+#box1{
+    background-color: aqua;
+    display: inline-block;
+}
+#box2{
+    background-color: rgb(0, 17, 255);
+    display: inline-block;
+    flex-grow: 0.2;
+}
+#box3{
+    height: 200px;
+    background-color: rgb(251, 0, 255);
+    display: inline-block;
+    align-self: center;
+}
+#box4{
+    background-color: rgb(255, 0, 0);
+    display: inline-block;
+    flex-shrink: 1;
+}
+#box5{
+    background-color: rgb(217, 255, 0);
+    display: inline-block;
+    flex-shrink: 2;
+}
+
