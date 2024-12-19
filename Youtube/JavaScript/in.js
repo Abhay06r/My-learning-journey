@@ -159,8 +159,24 @@ if(mode == "dark"){
 }else{
    color = "white";
 }
-console.log(color)
+console.log(color);
 
 // ternary operators
 let check = age>18?"adult":"not adult";
-console.log(check)
+console.log(check);
+
+alert("Hello");//one time popup
+
+let fullHikeName = prompt("Hello");
+
+console.log(fullHikeName);
+
+// Check if number is multiple of 5 or not
+
+let num1 = prompt("Enter a number: ");
+
+if (num1 % 5 == 0) {
+   console.log("Number is multiple of 5");
+}else {
+   console.log("Number is not multiple of 5");
+}
