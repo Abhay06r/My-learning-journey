@@ -176,7 +176,7 @@ console.log(fullHikeName);
 let num1 = prompt("Enter a number: ");
 
 if (num1 % 5 == 0) {
-   console.log("Number is multiple of 5");
+   console.log(num1, "Number is multiple of 5");
 }else {
-   console.log("Number is not multiple of 5");
+   console.log(num1, "Number is not multiple of 5");
 }
