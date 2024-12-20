@@ -167,16 +167,173 @@ console.log(check);
 
 alert("Hello");//one time popup
 
-let fullHikeName = prompt("Hello");
+// let fullHikeName = prompt("Hello");
 
-console.log(fullHikeName);
+// console.log(fullHikeName);
 
 // Check if number is multiple of 5 or not
 
-let num1 = prompt("Enter a number: ");
+let num1 = 56
 
 if (num1 % 5 == 0) {
    console.log(num1, "Number is multiple of 5");
 }else {
    console.log(num1, "Number is not multiple of 5");
 }
+ 
+// for loop
+
+for(let i = 1; i <= 5; i++){
+   console.log(i);
+}
+
+// while loop
+
+let i = 1;
+
+while(i<=5){
+   console.log(i);
+   i++;
+}
+
+//do-while loop
+
+do{
+   console.log(i);
+   i++;
+}while(i<=6);
+
+//for-of loop
+let fruits = ["Apple", "Banana", "Papaya"]
+for(let fruit of fruits){
+   console.log(fruit);
+}
+
+//for-in loop
+let person = {
+   name: "John",
+   age: 25,
+}
+for(let key in person){
+   console.log(key, person[key]);
+}
+
+//Practice Qs : 1 
+for(let num = 0; num <= 100; num++){
+   if(num % 2 == 0){
+      console.log(num);
+   }
+}
+
+//Practice Qs 2
+let gameNum = 9999;
+let userNum = prompt("Guess the number : ");
+
+while (userNum != gameNum){
+   userNum = prompt("You entered wrong number. Guess again: ");
+}
+
+console.log("Congratulations , you on the game");
+
+//String
+
+let str = "Aryan";
+console.log(str[2]);
+console.log(str.length);
+
+// Method in JS
+
+let str1 = "Hello   :";
+let str2 = "Aryan";
+console.log(str1.toUpperCase());
+
+console.log(str1.toLowerCase());
+console.log(str1.trim());
+console.log(str1.slice(1, 5));
+console.log(str1.replace("Hello", "Hi"));
+console.log(str1.concat(str2));
+console.log(str1.split(" "));
+console.log(str2.charAt(4));
+
+//QS 1 
+// prompt the user to enter their fullname. generate the username for them based on input. start username with @ followed by their fullname
+// and ending with their fullname length.
+
+let fullName1 = prompt("Enter your full name: ");
+let username = "@" + fullName1 + fullName1.length;
+
+console.log(username);
+
+// Arrays
+
+let arr = ["Maths", "Physics", "Chemistry", "Mechanics", "Programming"];
+
+console.log(arr);
+
+for (index = 0; index < arr.length; index++){
+   console.log(arr[index]);
+}
+
+let arr1 = ["Delhi", "Mumbai", "Kolkata", "Chennai"];
+for(let index of arr1) {
+   console.log(index);
+}
+
+let marks = [85, 97, 44, 37, 76, 60];
+
+let sum = 0;
+
+for(let mark of marks) {
+   sum += mark;
+}
+
+console.log(sum);
+
+let average = sum / marks.length;
+
+console.log(`Average marks of class = ${average}`);
+
+
+let arrIteams = [250, 645, 300, 900, 50];
+let l = 0;
+for (let val of arrIteams) {
+   let offer = val * 0.1;
+   arrIteams[l] = arrIteams[l] - offer;
+   console.log(`Value after discount = ${arrIteams[l]}`);
+   l++;
+}
+
+for (let i = 0; i < arrIteams.length; i++) {
+   let offer = arrIteams[i] * 0.1;
+   arrIteams[i] -= offer;
+   console.log(`Value after discount = ${arrIteams[i]}`);
+}
+
+let cities = ["Delhi", "Mumbai", "Kolkata", "Chennai", "Bangalore"];
+
+cities.push("GKP", "Lucknow", "Agra", "Jaipur");
+console.log(cities);
+
+let del = cities.pop();
+console.log(del);
+console.log(cities);
+
+console.log(cities.toString);
+
+let  del1 = cities.shift();
+console.log(del1);
+
+let citie = cities.concat(del);
+console.log(citie);
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+console.log(companies.unshift());
+
+console.log(companies);
+
+companies.splice(2, 1 , "Ola");
+console.log(companies);
+
+companies.push("Amazon");
+console.log(companies);
