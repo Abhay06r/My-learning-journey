@@ -337,3 +337,17 @@ console.log(companies);
 
 companies.push("Amazon");
 console.log(companies);
+
+// Functions
+
+function sum(x, y){
+   console.log(x+y);
+}
+sum(10, 20);
+
+function add(x , y){
+   s = x + y;
+   return s;
+}
+
+console.log(add(10, 20));
