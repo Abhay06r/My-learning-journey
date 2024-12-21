@@ -340,10 +340,10 @@ console.log(companies);
 
 // Functions
 
-function sum(x, y){
+function su(x, y){
    console.log(x+y);
 }
-sum(10, 20);
+su(10, 20);
 
 function add(x , y){
    s = x + y;
@@ -351,3 +351,33 @@ function add(x , y){
 }
 
 console.log(add(10, 20));
+
+//Arrow functions it is introduce in Modern Js
+
+const arrowSum = (a , b) => {
+   console.log(a + b);
+};
+
+const arrowMul = (a , b) => {
+   return a * b;
+};
+
+arrowSum(25 , 30);
+console.log(arrowMul(10 , 20));
+
+//Create a function using "Function" keyword that takes a string as an argument and returns the number of vowels in the string.
+
+function countVowels(str){
+   let count = 0;
+   for (const char of str){
+      if (char === "a"|| 
+         char === "i" ||
+         char === "e" ||
+         char === "o" ||
+         char === "u"){
+         count++;    
+   }
+} 
+return count;
+}
+
