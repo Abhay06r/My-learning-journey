@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>o</title>
+    <title>Aviator Game</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="nav-bar"></div>
-        <div class="2"></div>
-        <div class="3"></div>
-    </header>
-    <main>
-        <section>
-        </section>
-    </main>
-    <br />
-    <footer>
-        <div class="hi"></div>
-        <div class="hi"></div>
-        <div class="hi"></div>
-    </footer>
+    <div class="container">
+        <h1>Aviator Game</h1>
+        <div class="game-area">
+            <div id="multiplier">1.00x</div>
+            <div id="crash-message" class="hidden">Crashed!</div>
+        </div>
+        <div class="betting-area">
+            <input type="number" id="bet-amount" placeholder="Enter your bet" />
+            <button id="place-bet">Place Bet</button>
+            <button id="cash-out" disabled>Cash Out</button>
+        </div>
+        <div id="game-status"></div>
+    </div>
+    <script src="./in.js"></script>
 </body>
 </html>
