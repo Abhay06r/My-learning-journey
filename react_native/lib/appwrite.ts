@@ -1,7 +1,8 @@
 import {Account, Avatars, Client, OAuthProvider} from "react-native-appwrite";
+import { GoogleAuthRequestConfig } from 'expo-auth-session';
 
 import * as Linking from 'expo-linking';
-import { Try } from "expo-router/build/views/Try";
+
 
 export const config = {
     platform: 'com.dgs.restate',
@@ -28,8 +29,9 @@ export async function login() {
 
         if(!response) throw new Error('Failed to login');
 
-        const browserResult = await openAuthSessionAsync(response.toString(),
-    redirectUri         
+        const browserResult = await openAuthSessionAsync (
+        response.toString(),
+        redirectUri         
     )
 
         if(browserResult.type !== 'success') throw new Error('Failed to login');
@@ -52,11 +54,10 @@ export async function login() {
 
 export async function logout() { 
     try {
-        const session = await account.deleteSession(sessionId: 'current');
+        const session = await account.deleteSession('current'); // Fixed syntax
         return true;
-    }    
-    catch (error) {
-        console.error(error);
+    } catch (error) {
+        console.error('Logout failed:', error); // Improved error message
         return false;
     }
 }
