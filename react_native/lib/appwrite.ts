@@ -2,6 +2,7 @@ import {Account, Avatars, Client, OAuthProvider} from "react-native-appwrite";
 import { GoogleAuthRequestConfig } from 'expo-auth-session';
 
 import * as Linking from 'expo-linking';
+import { openAuthSessionAsync } from "expo-web-browser";
 
 
 export const config = {
@@ -42,7 +43,7 @@ export async function login() {
         const userId = url.searchParams.get('userId')?.toString();
         if (!secret || !userId) throw new Error('Failed to login');
 
-        const session = await account.createSession(userId);
+        const session = await account.createSession(userId,secret);
         if(!session) throw new Error('Failed to create a session');
         return true;
     }
