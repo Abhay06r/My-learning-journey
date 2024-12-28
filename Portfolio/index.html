@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Ojha's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        .progress-bar {
+            width: 500px;
+            height: 30px;
+            background-color: #8d8d8d;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .status{
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background-color: rgb(240, 128, 0);
+            width: 0%; /* Initially 0% filled */
+            transition: width 0.5s ease-in-out;
+        }
+
+        .progress-text {
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abhay Ojha</h1>
+    <div>
+        <p class="status">Status: Upcoming</p>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+    </div>
+
+    <div class="progress-text">0% Complete</div>
+
+    <script>
+        // Get the progress bar elements
+        const progressBar = document.querySelector('.progress-bar-fill');
+        const progressText = document.querySelector('.progress-text');
+
+        // Set an initial progress value (replace with your actual data)
+        let progress = 0;
+
+        // Function to update the progress bar
+        function updateProgressBar() {
+            progress += 1; // Increment progress by 10% (replace with your logic)
+            progressBar.style.width = `${progress}%`;
+            progressText.textContent = `${progress}% Complete`;
+
+            // Stop updating when progress reaches 100%
+            if (progress < 50) {
+                setTimeout(updateProgressBar, 500); // Update every second
+            }
+        }
+
+        // Start the progress bar update
+        updateProgressBar();
+    </script>
+</body>
+</html>
