@@ -19,7 +19,7 @@ document.getElementById('cash-out').addEventListener('click', function() {
 function startGame() {
     document.getElementById('crash-message').classList.add('hidden');
     document.getElementById('cash-out').disabled = false;
-    multiplier = 1.00;
+    multiplier = 1.0;
     isCrashed = false;
     document.getElementById('game-status').innerText = "Game in progress...";
     document.getElementById('multiplier').innerText = multiplier.toFixed(2) + "x";
@@ -28,7 +28,7 @@ function startGame() {
         if (!isCrashed) {
             multiplier += 0.01; // Increase multiplier
             document.getElementById('multiplier').innerText = multiplier.toFixed(2) + "x";
-            if (Math.random() < 0.05) { // Random crash
+            if (Math.random() < 0.35) { // Random crash
                 crash();
             }
         }
