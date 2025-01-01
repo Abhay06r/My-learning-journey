@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Ninjas - Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="https://files.codingninjas.in/0000000000000722.png" alt="Coding Ninjas"></a>
+        <h2>Admin Dashboard</h2>
+    </header>
+
+    <hr />
+
+    <main>
+        <section id ="enrollments-list">
+            <h2>Enrollment List</h2>
+
+            <table border="1">
+                <caption>
+                    List of User Enrollments
+                </caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">User ID</th>
+                        <th rowspan="2">Full Name</th>
+                        <th rowspan="2">Email</th>
+                        <th rowspan="2">Enrolled Courses</th>
+                    </tr>
+                    <tr>
+                        <th>Course ID</th>
+                        <th>Course Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">1</td>
+                        <td rowspan="3">John Doe</td>
+                        <td rowspan="3">john@example.com</td>
+                        <td rowspan="3">Data Structures, Web Development</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">101</td>
+                        <td rowspan="3">Data Structures</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">2</td>
+                        <td rowspan="3">Jane Smith</td>
+                        <td rowspan="3">jane@example.com</td>
+                        <td rowspan="3">Machine Learning</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Machine Learning</td>
+                    </tr>  
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Total Users: 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
